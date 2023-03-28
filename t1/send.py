@@ -6,6 +6,7 @@ channel = connection.channel()
 channel.queue_declare(queue='hello')
 
 
-channel.basic_publish(exchange='',routing_key= 'hello',body='hello mehrshad3',)
+channel.basic_publish(exchange='', routing_key='hello',
+                      body='hello mehrshad3',)
 print('after sending')
 channel.close()
